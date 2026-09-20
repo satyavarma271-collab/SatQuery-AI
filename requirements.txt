@@ -1,0 +1,11 @@
+streamlit
+torch
+torchvision
+transformers
+Pillow
+accelerate
+rasterio
+folium
+streamlit-folium
+opencv-python-headless
+numpy
