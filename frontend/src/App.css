@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+  height: 70px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-text {
+  color: #64748b;
+}
+
+/* Main container */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 0;
+}
+
+/* Hero */
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #64748b;
+}
+
+/* Workspace */
+
+.workspace {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.upload-card,
+.query-card,
+.answer-card {
+  background: white;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Upload */
+
+.upload-box {
+  height: 350px;
+  border: 2px dashed #94a3b8;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+}
+
+.upload-icon {
+  font-size: 50px;
+}
+
+.upload-box p {
+  color: #64748b;
+}
+
+.upload-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Question */
+
+textarea {
+  width: 100%;
+  height: 180px;
+  resize: none;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 15px;
+  font-size: 16px;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #4f46e5;
+}
+
+/* Button */
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #4f46e5;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* AI Answer */
+
+.answer-card {
+  margin-top: 25px;
+}
+
+.answer-box {
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 12px;
+  color: #475569;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-text {
+    display: none;
+  }
+}
